@@ -93,21 +93,6 @@
             </div>
             </div>
         </form>
-        <?php
-                $ID=$_POST['ID'];
-                $nombre=$_POST['nombre'];
-                $ap_paterno=$_POST['ap_paterno'];
-                $ap_materno=$_POST['ap_materno'];
-                $correo=$_POST['correo'];
-                $movil=$_POST['movil'];
-                $direccion=$_POST['direccion'];
-        if (isset($_POST['insertar'])){
-
-
-        $ins="UPDATE cliente SET Nombre = '$nombre', Ap_Paterno = '$ap_paterno', Ap_Materno = '$ap_materno', Correo = '$correo', Movil = '$movil', Direccion = '$direccion' WHERE cliente.ID = '$ID'";
-        $sql=mysqli_query($conexion,$ins);
-        }
-        ?>
     </div>
 <footer class="footer">
     <table>
