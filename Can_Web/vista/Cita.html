@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanWeb</title>
+    <link rel="stylesheet" href= "CSS/index.css"> 
+    <link rel="stylesheet" href= "estilos/estilo_perfil.css">
+    <link rel="stylesheet" href="CSS/Formulario.css">
+    <script src="https://kit.fontawesome.com/b119c8d343.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="encabezado">
+        <img src="Imagenes/Logo proyecto.jpeg" alt="CanWeb"> 
+        <h1>Gestion veterinaria</h1>
+        <h1>Clinica de mascotas MVPET</h1>
+        <div class="clearfix"></div>
+        <nav>
+            <a href="index.html">
+                <i class="fa-solid fa-right-to-bracket"></i> Salir</a>
+            <a href="lista_empleados.php">
+                <i class="fa-regular fa-person"></i> Empleado</a>
+            <a href="lista_clientes.php">
+                <i class="fa-solid fa-address-book"></i> Cliente</a>
+            <a href="lista_mascotas.php">
+                <i class="fa-regular fa-dog"></i> Mascotas</a>
+            <a href="lista_Servicios.php">
+                <i class="fa-light fa-briefcase"></i> Servicios</a>
+            <a href="lista_usuarios.php">
+                <i class="fa-solid fa-user"></i> Usuarios</a>
+            <a href="lista_productos.php">
+            <i class="fa-solid fa-shelves"></i> Inventario</a>
+            <a href="generarcomprobantes.html">
+            <i class="fa-thin fa-file-medical"></i> Comprobantes</a>
+            <a href="cita.html">
+               <i class="fa-solid fa-books-medical"></i> Citas</a>
+            <a href="Historial_clinico.html">
+            <i class="fa-solid fa-notes-medical"></i>Historial Clinico</a>
+        </nav>
+    </header>
+    <!--Contenido formulario-->
+    <div class="conform">
+        <form action="listaCliente.html">
+            <h2>CITAS</h2>
+            <div class="f1">
+                <div class ="c1">
+                    <label for="">Nombre</label><br>
+                    <input type="text" required>
+
+                </div>
+                <div class="c1">
+                    <label for="">Apellido Paterno</label><br>
+                    <input type="text" required>
+                    <br>
+                </div>
+                    <!-- Segunda Fila-->
+                     <div class="f1">
+                        <div class="c1">
+                            <label for="">Apellido Materno</label><br>
+                            <input type="text" required>
+                            <br>
+                        </div>
+
+                         <!--Tercera fila-->
+                        <div class="c1">
+                            <label for="">Domicilio</label><br>
+                            <input type="text" required>
+                            <br>
+                        </div>
+                        <!--Cuarta fila-->
+
+                        <div class="f1">
+                            <div class="c1">
+                                <label for="">Nombre de la mascota</label><br>
+                                <input type="text" required>
+                                <br>
+                            </div>
+                        <!---->
+                        <div class="c1">
+                            <label for="">Motivo de Consulta</label><br>
+                            <input type="text" required>
+                            <br>
+                        </div>
+                        <!---->
+                          <!--Cuarta fila-->
+
+                          <div class="f1">
+                            <div class="c1">
+                                <label for="">Servicio</label><br>
+                                <input type="text" required>
+                                <br>
+                            </div>
+                        <!---->
+                        <div class="c1">
+                            <label for="">Servicio</label><br>
+                            <input type="text" required>
+                            <br>
+                        </div>
+                        <!---->
+                        <div class="f1">
+                            <div class="c1">
+                                <label for="">Fecha</label><br>
+                                <input type="date" required>
+                                <br>
+                            </div>
+                        <!---->
+                        <div class="c1">
+                            <label for="">Horario</label><br>
+                            <input type="time" required>
+                            <br>
+                        </div>
+                        <!---->
+                        <div class="f1">
+                            <div class ="c1">
+                                <label for="">Movil</label><br>
+                                <input type="text" required><br>
+                                <br>
+                                <input type="submit" value="Enviar" id="env" name= "insertar" onclick="alerta()">
+                                <input type="reset" value="Cancelar" id="can">
+            
+                            </div>
+                            <!--Quinta Fila-->
+                            <div class="c1">
+                                <label for="">Correo electronico</label><br>
+                                <input type="text" required>
+                                <br>
+                            </div>
+
+                        </div>
+                     </div>
+            </div>
+        </form>
+    </div>
+    <!--Pie de pagina-->
+    <footer class = "footer table">
+        <table>
+            <tr>
+                <td>
+                    &#169; Innova Teams 2024 Todos los derechos reservados<br>
+                    Hospital Veterinario MVPET <br>
+            <i class="fa-solid fa-location-dot"> </i>   
+            Calle Verdolaga 105 Col.Benito Juarez Edo Mex
+                    Telefono 5537656125
+                </td>
+                <td>
+                    <td>
+                        <br>
+                    CanWeb<br>
+                    <i id="face" class="fa-brands fa-facebook"></i></i>
+                    <i id="whats" class="fa-brands fa-whatsapp"></i></i>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <!--Pie de pagina-->
+    </div>
+</body>
+</html>

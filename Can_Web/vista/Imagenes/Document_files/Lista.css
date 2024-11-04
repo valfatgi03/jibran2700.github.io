@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.lista{
+    max-width: 100%;
+    margin: 15%;
+    overflow: hidden;
+}
+.lista h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2vw;
+    text-align: left;
+    color: blue;
+    text-align: center;
+}
+.lista table{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+.lista th{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2vw;
+    letter-spacing: 0.5px;
+}
+.lista td{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:1vw;
+    text-align: left;
+    letter-spacing: 0.2px;
+}
+.lista tr{
+    border: 2.5px solid blue;
+}
+.lista td{
+    border: 2.5px solid blue;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.encabezado{
+    width: 100%;
+    overflow: hidden;
+}
+
+.encabezado h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* vw es igual al 1% del ancho de la ventana*/
+    font-size: 3vw;
+    color: #041d56;
+    text-align: left;
+    letter-spacing: 2px;
+    margin: 17px;
+}
+.encabezado img{
+    width: 10%;
+    float: left;
+}
+.encabezado nav{
+    max-width: 100%;
+    overflow: hidden;
+    background-color: #226ca9;
+    margin: 0px;
+    
+}
+.encabezado a:hover{
+    color: #ade1fb;
+    background-color: white;
+}
+.encabezado a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5vw;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 0.5% 3%;
+    float: right;
+}
+
+.footer table{
+    width: 100%;
+    height: 128px;
+    overflow: hidden;
+    float: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1wm;
+    background-color: #226ca9;
+    color: white;
+    text-align: center;
+    
+}
+#whats{
+    color: #25D366;
+    padding: 2%;
+}
+#face{
+    color: #1877F2;
+    padding: 2%;
+}
+.footer i{
+    font-size: 1.5vw;
+}
+.contUsuario{
+    padding: 14%;
+}
+.encabezado h2{
+    text-align: right;
+}
+
+.clearfic::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.nuevo{
+    width: 15%;
+    background-color: #226ca9;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.nuevo i{
+    color: white;
+    padding: 2%;
+    margin-left: 45%;
+}
+.nuevo h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+}

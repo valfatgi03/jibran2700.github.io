@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.encabezado img{
+    width: 10%;
+    float: left;
+}
+.encabezado h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* vw es igual al 1% del ancho de la ventana*/
+    font-size: 3vw;
+    color: #041d56;
+    text-align: left;
+    letter-spacing: 2px;
+    margin: 17px;
+}
+.encabezado a:hover{
+    color: rgb(155, 155, 241);
+}
+.sesion form{
+    width: 40%;
+    margin: 3% auto 10%;
+    text-align: center;
+    background-color: #ade1fb;
+    padding: 5% 2%;
+}
+.sesion input{
+    font-family: sans-serif;
+    font-size: 1vw;
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    border-style: outset;
+    border: 1px solid;
+    border-radius: 2px;
+}
+#enviar{
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3vw;
+    background-color: #041d56;
+    color: white;
+    cursor: pointer;
+}
+#enviar:hover{
+    background-color: white;
+    color: #041d56;
+}
+.footer table{
+    width: 100%;
+    height: 128px;
+    overflow: hidden;
+    float: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1wm;
+    background-color: #226ca9;
+    color: white;
+    text-align: center;
+}
+#whats{
+    color: #25D366;
+    padding: 2%;
+}
+#face{
+    color: #1877F2;
+    padding: 2%;
+}
+.footer i{
+    font-size: 1.5vw;
+}
