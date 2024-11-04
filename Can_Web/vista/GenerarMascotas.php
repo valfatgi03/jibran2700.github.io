@@ -1,6 +1,3 @@
-<?php 
-    $conexion=mysqli_connect('localhost','root','','lan_blast')
-    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,25 +15,26 @@
         <h1 id="t2">Clinica de mascotas MVPET</h1>
         <div class="clearfix"></div>
         <nav>
+        <nav>
         <a href="index.html">
                 <i class="fa-solid fa-right-to-bracket"></i> Salir</a>
-            <a href="lista_empleados.php">
+            <a href="lista_empleados.html">
                 <i class="fa-regular fa-person"></i> Empleado</a>
-            <a href="lista_clientes.php">
+            <a href="lista_clientes.html">
                 <i class="fa-solid fa-address-book"></i> Cliente</a>
-            <a href="lista_mascotas.php">
+            <a href="lista_mascotas.html">
                 <i class="fa-regular fa-dog"></i> Mascotas</a>
-            <a href="lista_Servicios.php">
+            <a href="lista_servicios.html">
                 <i class="fa-light fa-briefcase"></i> Servicios</a>
-            <a href="lista_usuarios.php">
+            <a href="lista_usuarios.html">
                 <i class="fa-solid fa-user"></i> Usuarios</a>
-            <a href="lista_productos.php">
+            <a href="lista_productos.html">
             <i class="fa-solid fa-shelves"></i> Inventario</a>
             <a href="generarcomprobantes.html">
             <i class="fa-thin fa-file-medical"></i> Comprobantes</a>
             <a href="cita.html">
                <i class="fa-solid fa-books-medical"></i> Citas</a>
-            <a href="Historial_clinico.html">
+            <a href="historial_clinico.html">
             <i class="fa-solid fa-notes-medical"></i>Historial Clinico</a>
                     
         </nav>
@@ -85,19 +83,6 @@
             </div>
         </div>
     </form>
-    <?php
-                $id=0;
-                $nombre=$_POST['nombre'];
-                $dueño=$_POST['dueño'];
-                $tipo=$_POST['tipo'];
-                $raza=$_POST['raza'];
-                $fecha=$_POST['fecha'];
-                $genero=$_POST['genero'];
-        if (isset($_POST['insertar'])){
-            $ins="INSERT INTO mascota (nombre, dueño, tipo, raza, fecha, genero) VALUES ('$nombre','$dueño','$tipo', '$raza','$fecha','$genero')";
-            $sql=mysqli_query($conexion,$ins);
-        }
-        ?>
 </div>
 <footer class="footer">
     <table>
