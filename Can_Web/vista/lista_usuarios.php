@@ -1,6 +1,3 @@
-<?php 
-    $conexion=mysqli_connect('localhost','root','','lan_blast')
-    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,27 +50,7 @@
                 <th colspan="2"> Operaciones</th>
             </tr>
             <tr>
-            <?php
-                $sql="SELECT * from usuario";
-                $result = mysqli_query($conexion,$sql);
-                while($mostrar=mysqli_fetch_array($result)){
-                    ?>
             <tr>
-                <td><?php echo $mostrar['ID']?></td>
-                <td><?php echo $mostrar['Usuario']?></td>
-                <td><?php echo $mostrar['Contraseña']?></td>
-                <td><?php echo $mostrar['Rol']?></td>
-                <td><a href="formusuario.php">
-                    <i class="fa-solid fa-pencil"></i>
-                    </a>
-                </td>
-                <td>
-                    <i class="fa-solid fa-trash"></i>
-                </td>
-            </tr>
-            <?php
-                }
-?>
                 </table>
                 <div class= nuevo>
                     <a href="generarusuarios.php">
