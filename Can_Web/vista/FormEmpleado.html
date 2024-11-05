@@ -39,10 +39,6 @@
         </nav>
     </header>
     <div>
-    <?php
-                $sql="SELECT * from empleado";
-                $Ids = mysqli_query($conexion,$sql);
-                    ?>
         <form action="" method="POST">
             <h2>Empleado</h2>
             <div class="f1">
@@ -93,21 +89,6 @@
             </div>
             </div>
         </form>
-        <?php
-                $ID=$_POST['ID'];
-                $nombre=$_POST['nombre'];
-                $ap_paterno=$_POST['ap_paterno'];
-                $ap_materno=$_POST['ap_materno'];
-                $correo=$_POST['correo'];
-                $movil=$_POST['movil'];
-                $puesto=$_POST['puesto'];
-        if (isset($_POST['insertar'])){
-
-
-        $ins="UPDATE empleado SET Nombre = '$nombre', Ap_Paterno = '$ap_paterno', Ap_Materno = '$ap_materno', Correo = '$correo', Movil = '$movil', Puesto = '$puesto' WHERE empleado.ID = '$ID'";
-        $sql=mysqli_query($conexion,$ins);
-        }
-        ?>
     </div>
 <footer class="footer">
     <table>
