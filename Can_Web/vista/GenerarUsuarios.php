@@ -1,6 +1,3 @@
-<?php 
-    $conexion=mysqli_connect('localhost','root','','lan_blast')
-    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,34 +15,28 @@
         <h1 id="t2">Clinica de mascotas MVPET</h1>
         <div class="clearfix"></div>
         <nav>
-            <a href="index.html">
-            <a href="index.html">
+        <a href="index.html">
                 <i class="fa-solid fa-right-to-bracket"></i> Salir</a>
-            <a href="lista_empleados.php">
+            <a href="lista_empleados.html">
                 <i class="fa-regular fa-person"></i> Empleado</a>
-            <a href="lista_clientes.php">
+            <a href="lista_clientes.html">
                 <i class="fa-solid fa-address-book"></i> Cliente</a>
-            <a href="lista_mascotas.php">
+            <a href="lista_mascotas.html">
                 <i class="fa-regular fa-dog"></i> Mascotas</a>
-            <a href="lista_Servicios.php">
+            <a href="lista_servicios.html">
                 <i class="fa-light fa-briefcase"></i> Servicios</a>
-            <a href="lista_usuarios.php">
+            <a href="lista_usuarios.html">
                 <i class="fa-solid fa-user"></i> Usuarios</a>
-            <a href="lista_productos.php">
+            <a href="lista_productos.html">
             <i class="fa-solid fa-shelves"></i> Inventario</a>
             <a href="generarcomprobantes.html">
             <i class="fa-thin fa-file-medical"></i> Comprobantes</a>
             <a href="cita.html">
                <i class="fa-solid fa-books-medical"></i> Citas</a>
-            <a href="Historial_clinico.html">
-            <i class="fa-solid fa-notes-medical"></i>Historial Clinico</a>
-                    
+            <a href="historial_clinico.html">
+            <i class="fa-solid fa-notes-medical"></i>Historial Clinico</a> 
         </nav>
-    </header>
-    <?php
-                $sql="SELECT * from servicio";
-                $Ids = mysqli_query($conexion,$sql);
-                    ?>
+    </header>    
 <div class="contform">
     <form action="" method ="POST">
         <h2>Usuarios</h2>
@@ -72,16 +63,6 @@
             </div>
         </div>
     </form>
-    <?php
-    $ID=0;
-    $usuario=$_POST['usuario'];
-    $contraseña=$_POST['contraseña'];
-    $rol=$_POST['rol'];
-    if (isset($_POST['insertar'])){
-        $ins="INSERT INTO usuario (usuario, contraseña, rol) VALUES ('$usuario','$contraseña','$rol')";
-        $sql=mysqli_query($conexion,$ins);
-        }
-        ?>
 </div>
 
 <footer class="footer">
