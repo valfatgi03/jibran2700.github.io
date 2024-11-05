@@ -75,11 +75,6 @@
                         <label for="">ID</label> <br>
                         <select name = "ID" >
                             <option value=""></option>
-                            <?php 
-                            while ($Select = mysqli_fetch_array($Ids) ){
-                                ?>
-                                <option value="<?php echo $Select['ID']?>"></option>
-                            <?php } ?>
                     </div>
                     <div class="c1">
                     <input type="submit" value="Enviar" id="env" name= "insertar" onclick="alerta()">
